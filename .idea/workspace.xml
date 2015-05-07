@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1392b02a-e2d5-4109-a616-848852af11de" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JpaSpitterRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java" afterPath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/HibernateSpitterRepository.java" afterPath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/HibernateSpitterRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JdbcSpitterRepository.java" afterPath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JdbcSpitterRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java" afterPath="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spring-DB-Test.iws" />
@@ -31,12 +29,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="0.6979866">
+              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#3861#3862#0" expanded="true" />
+                <element signature="e#3934#3935#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="108" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="108" />
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,25 +57,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdkDynamicAopProxy.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.28">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java">
+      <file leaf-file-name="JpaSpitterRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JpaSpitterRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,30 +83,6 @@
                 <marker date="1431028303000" expanded="true" signature="583:658" placeholder="insert into ..." />
                 <marker date="1431028303000" expanded="true" signature="927:961" placeholder="Select * Fro..spitter..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HibernateSpitterRepository.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/HibernateSpitterRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61764705">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -140,11 +112,12 @@
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/SpitterRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/model/Spitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JdbcSpitterRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/HibernateSpitterRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JpaSpitterRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java" />
       </list>
     </option>
   </component>
@@ -600,12 +573,12 @@
       <workItem from="1429730888536" duration="644000" />
       <workItem from="1429814034665" duration="15000" />
       <workItem from="1430933568308" duration="8346000" />
-      <workItem from="1431023349483" duration="3520000" />
+      <workItem from="1431023349483" duration="5531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12525000" />
+    <option name="totallyTimeSpent" value="14536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="800" extended-state="6" />
@@ -628,7 +601,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32909605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -686,8 +659,10 @@
           <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#3861#3862#0" expanded="true" />
+            <element signature="e#3934#3935#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,36 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="108" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="108" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar!/org/springframework/jdbc/core/RowMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13740458">
@@ -867,6 +812,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar!/org/springframework/orm/jpa/vendor/AbstractJpaVendorAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.96">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16778524">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar!/org/springframework/orm/jpa/vendor/Database.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1421801">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/HibernateSpitterRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.97315437">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JdbcSpitterRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -879,14 +863,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/HibernateSpitterRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61764705">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/data/JpaSpitterRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nao/cycledev/springdb/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6979866">
+          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#3861#3862#0" expanded="true" />
+            <element signature="e#3934#3935#0" expanded="true" />
           </folding>
         </state>
       </provider>

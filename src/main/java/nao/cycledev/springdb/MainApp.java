@@ -15,10 +15,10 @@ public class MainApp {
         ApplicationContext context = new AnnotationConfigApplicationContext(
                 nao.cycledev.springdb.config.DataSourceConfig.class);
 
-        SpitterRepository spitterRepository = (SpitterRepository)context.getBean("hibernateSpitterRepository");
+        SpitterRepository spitterRepository = (SpitterRepository)context.getBean("jpaSpitterRepository");
 
         //Spitter spitter = new Spitter(5, "111", "222", "111.222");
-        Spitter spitter = spitterRepository.findSpitter(1);
+        Spitter spitter = spitterRepository.findSpitter(5);
         System.out.println(spitter);
 
     }

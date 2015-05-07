@@ -13,6 +13,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.JpaVendorAdapter;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -39,17 +43,19 @@ public class DataSourceConfig {
 
     }
 
+    // JDBC template
     @Bean
     public JdbcTemplate jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
 
+    // Hibernate
     @Bean
     public LocalSessionFactoryBean sessionFactory(DataSource ds) {
 
         LocalSessionFactoryBean sfb = new LocalSessionFactoryBean();
         sfb.setDataSource(ds);
-        sfb.setPackagesToScan(new String[]{"nao.cycledev.springdb.model" });
+        sfb.setPackagesToScan(new String[]{"nao.cycledev.springdb.model"});
         //sfb.setAnnotatedClasses(
         //        new Class<?>[] { Spitter.class }
         //);
@@ -70,9 +76,33 @@ public class DataSourceConfig {
         return txManager;
     }
 
+    // JPA
+    @Bean
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource, JpaVendorAdapter jpaVendorAdapter) {
+
+        LocalContainerEntityManagerFactoryBean emfb = new LocalContainerEntityManagerFactoryBean();
+        emfb.setDataSource(dataSource);
+        emfb.setJpaVendorAdapter(jpaVendorAdapter);
+        emfb.setPackagesToScan("nao.cycledev.springdb.model");
+        return emfb;
+
+    }
+
+    @Bean
+    public JpaVendorAdapter jpaVendorAdapter() {
+        HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
+        adapter.setDatabase(Database.MYSQL);
+        adapter.setShowSql(false);
+        adapter.setGenerateDdl(false);
+        adapter.setDatabasePlatform("org.hibernate.dialect.MySQLDialect");
+        return adapter;
+    }
+
+    // Exception translation
     @Bean
     public BeanPostProcessor persistenceTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
     }
+
 
 }

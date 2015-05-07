@@ -18,7 +18,7 @@ public class MainApp {
         SpitterRepository spitterRepository = (SpitterRepository)context.getBean("hibernateSpitterRepository");
 
         //Spitter spitter = new Spitter(5, "111", "222", "111.222");
-        Spitter spitter = spitterRepository.findSpitter(5);
+        Spitter spitter = spitterRepository.findSpitter(1);
         System.out.println(spitter);
 
     }

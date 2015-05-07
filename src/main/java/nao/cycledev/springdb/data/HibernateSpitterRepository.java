@@ -5,11 +5,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-//@EnableTransactionManagement
+@Transactional
 public class HibernateSpitterRepository implements SpitterRepository {
 
     SessionFactory sessionFactory;
@@ -29,8 +28,8 @@ public class HibernateSpitterRepository implements SpitterRepository {
     }
 
     @Override
-    @Transactional
     public Spitter findSpitter(long id) {
         return (Spitter)currentSession().get(Spitter.class, id);
     }
+    
 }
